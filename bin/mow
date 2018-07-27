@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'mow'
+
+from_file, to_file = ARGV
+trimmer = Mow::Trimmer.new
+trimmer.trim(from_file.to_s, to_file)
